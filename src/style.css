@@ -1,3 +1,115 @@
+* {
+    /*Mieux placer le début des éléments et définir la taille par défault*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  size: 16px;
+}
+
+header {
+    /*Définir l'en-tête*/
+  background-color: rgb(56, 56, 56);
+  color: whitesmoke;
+  padding: 0.625rem 1.25rem;
+  position: relative;
+}
+
+.wrapper {
+    /*Taille*/
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+
+  /*Flex Box*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+    /*Taille du logo*/
+  width: 3rem;
+  height: 3.rem;
+}
+
+.search-bar-input{
+    /*Taille de la barre de recherche*/
+    height: 1.875rem;
+    width: 31.25rem;
+}
+
+nav {
+    /*Alligner tout les éléments au millieu*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+nav ul li {
+  list-style: none;
+  font-family: system-ui;
+}
+
+.menu-icon {
+    /*définir la taille du menu hamburger*/
+  display: none;
+  width: 1.875rem;
+  background: none;
+  border: none;
+}
+
+/*Barre de navigation*/
+
+/*Début de la page*/
+
+.hero{
+    img{
+        position: relative;
+        width: 60vw;
+    }
+    
+}
+
+
+
+
+/*Adaptatif au mobile*/
+@media (width <= 56.25rem) {
+  .menu-icon {
+    display: block;
+  }
+
+  .search-bar-input{
+    width: 20rem;
+  }
+
+  nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+    background-color: gray;
+  }
+
+  .closed {
+    top: 0;
+    translate: 0 -100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+}
+
 .ProduitPresentation{
   display: flex;
   flex-direction: row;
