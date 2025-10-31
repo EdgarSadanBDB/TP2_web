@@ -1,3 +1,42 @@
+.ProduitPresentation{
+  display: flex;
+  flex-direction: row;
+  gap: 0.7rem;
+  margin-left: 10rem;
+}
+.ProduitPresentation button{
+  width: 100px;
+  height: 100px;
+}
+.buttonNike-wrapper img{
+  width: 50px;
+  height: 50px;
+}
+
+.buttonNike{
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.swiper{
+  width: 800px;
+  height: 800px;
+}
+.ProduitNike img{
+  width: 500px;
+  height: 500px;
+}
+.Tailles-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+
+
+
 /* ----------------Footer------------------------ */
 footer{
   background-color: gray;
