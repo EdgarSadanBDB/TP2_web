@@ -71,9 +71,14 @@ nav ul li {
 /*Début de la page*/
 
 .hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(56, 56, 56);
+
     img{
         position: relative;
-        width: 60vw;
+        width: 100vw;
     }
     
 }
@@ -152,7 +157,7 @@ nav ul li {
 /* ----------------Footer------------------------ */
 footer{
   background-color: gray;
-  position: fixed;
+  position: relative;
   bottom: 0;
   left: 0;
   width: 100%;
