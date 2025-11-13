@@ -125,6 +125,7 @@ nav ul li {
   nav ul {
     flex-direction: column;
   }
+
 }
 
 .ProduitPresentation {
@@ -237,8 +238,32 @@ nav ul li {
   object-fit: cover;
 }
 
-
-
+.contactez{
+  text-align: left;
+  padding-bottom: 3rem;
+  background-image: url(/public/Hero.jpg);
+  background-size: cover;
+  background-position: 20rem;
+  
+}
+ input{
+  width: 1200px;
+  height: 200px;
+  
+ }
+.contact{
+  padding-top: 10rem;
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: white;
+  
+}
+.contact img{
+  width: auto;
+  height: 200px;;
+}
 
 /* Footer */
 footer {
@@ -271,7 +296,12 @@ body {
   width: 50px;
   height: 50px;
 }
-
+@media (max-width: 1250px){
+ input{
+  width: 700px;
+  height: 200px;
+ }
+}
 /* Adaptatif footer */
 @media (max-width: 600px) {
   .footer-wrapper {
@@ -323,4 +353,9 @@ body {
     flex-wrap: wrap;
     gap: 0.5rem;
   }
+
+  input{
+  width: 400px;
+  height: 200px;
+ }
 }
