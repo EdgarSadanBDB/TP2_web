@@ -1,5 +1,4 @@
 * {
-    /*Mieux placer le début des éléments et définir la taille par défault*/
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,7 +6,6 @@
 }
 
 header {
-    /*Définir l'en-tête*/
   background-color: rgb(56, 56, 56);
   color: whitesmoke;
   padding: 0.625rem 1.25rem;
@@ -15,31 +13,25 @@ header {
 }
 
 .wrapper {
-    /*Taille*/
   width: 100%;
   max-width: 80rem;
   margin: 0 auto;
-
-  /*Flex Box*/
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .logo {
-    /*Taille du logo*/
   width: 3rem;
   height: 3.rem;
 }
 
-.search-bar-input{
-    /*Taille de la barre de recherche*/
-    height: 1.875rem;
-    width: 31.25rem;
+.search-bar-input {
+  height: 1.875rem;
+  width: 31.25rem;
 }
 
 nav {
-    /*Alligner tout les éléments au millieu*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,7 +51,6 @@ nav ul li {
 }
 
 .menu-icon {
-    /*définir la taille du menu hamburger*/
   display: none;
   width: 1.875rem;
   background: none;
@@ -114,7 +105,7 @@ nav ul li {
     display: block;
   }
 
-  .search-bar-input{
+  .search-bar-input {
     width: 20rem;
   }
 
@@ -122,7 +113,6 @@ nav ul li {
     position: absolute;
     top: 100%;
     left: 0;
-
     width: 100%;
     background-color: gray;
   }
@@ -137,48 +127,59 @@ nav ul li {
   }
 }
 
-.ProduitPresentation{
+.ProduitPresentation {
   display: flex;
   flex-direction: row;
   gap: 0.7rem;
   margin-top: 4rem;
   justify-content: center;
 }
-.ProduitPresentation button{
+
+.ProduitPresentation button {
   width: 100px;
   height: 100px;
 }
-.buttonNike-wrapper img{
+
+.buttonNike-wrapper img {
   width: 50px;
   height: 50px;
 }
 
-.buttonNike{
+.buttonNike {
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
 }
-.swiper .produit{
+
+.swiper .produit {
   width: 100%;
-  max-width: 600px;      
-  height: auto;          
-  aspect-ratio: 1 / 1;   
+  max-width: 600px;
+  height: auto;
+  aspect-ratio: 1 / 1;
   margin: 0 auto;
+  display: flex;
 }
-.swiper-slide .produit{
+
+.swiper-wrapper .produit {
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-slide .produit {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.ProduitNike img{
+
+.ProduitNike img {
   width: 500px;
   height: 500px;
 }
-.Tailles-wrapper{
+
+.Tailles-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .buttonTailles {
@@ -186,23 +187,61 @@ nav ul li {
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.5rem;
-  max-width: 300px; 
+  max-width: 300px;
   margin-top: 5rem;
 }
 
 .buttonTailles button {
-   
   min-width: 50px;
   height: 40px;
+}
+
+.acheter {
+  background-color: rgb(63, 88, 199);
+  color: white;
+  border-color: rgb(0, 0, 0);
+}
+.autre{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.TitreAutre{
+  margin-top: 10rem;
+  text-align: center;
+}
+.swiper {
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  
+}
+
+.swiper-slide:hover {
+  transform: scale(1.05);
+}
+
+.swiper-slide img {
+  width: 500px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
 }
 
 
 
 
-
-
-/* ----------------Footer------------------------ */
-footer{
+/* Footer */
+footer {
   background-color: gray;
   position: relative;
   bottom: 0;
@@ -210,42 +249,46 @@ footer{
   margin-top: auto;
   width: 100%;
 }
+
 body {
   background-color: #f5f5f5;
   height: 100%;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /*Fait que le body prend toute la page pour que le footer reste en bas*/
+  min-height: 100vh;
 }
-.footer-wrapper{
+
+.footer-wrapper {
   display: flex;
   justify-content: center;
   text-align: left;
   gap: 10rem;
-  
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
-.suivez-nous img{
+.suivez-nous img {
   width: 50px;
   height: 50px;
 }
 
-/* ----------------Adaptatif------------------------ */
-
+/* Adaptatif footer */
 @media (max-width: 600px) {
-  .footer-wrapper{
+  .footer-wrapper {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
     text-align: center;
     font-size: 0.8rem;
-  }
-  .suivez-nous img{
-  width: 30px;
-  height: 30px;
+    margin-top: 2rem;
   }
 
-   .Tailles-wrapper {
+  .suivez-nous img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .Tailles-wrapper {
     width: 100%;
     padding-bottom: 2rem;
   }
@@ -255,23 +298,18 @@ body {
     justify-content: space-evenly;
   }
 
- 
+  .buttonNike-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-/* --- Organisation des boutons Nike --- */
-.buttonNike-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  .buttonNike {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
 
-.buttonNike {
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
-}
-
-/* --- Adaptation mobile --- */
-@media (max-width: 800px) {
   .ProduitPresentation {
     flex-direction: column;
     align-items: center;
@@ -285,30 +323,4 @@ body {
     flex-wrap: wrap;
     gap: 0.5rem;
   }
-
-  .buttonNike {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.5rem;
-  }
-
-  .buttonNike button {
-    width: 70px;
-    height: 70px;
-  }
-
-  .buttonNike-wrapper img {
-    width: 60px;
-    height: 60px;
-  }
-  
-  .swiper .produit{
-    max-width: 90vw;
-  }
-
-   .AutreProduit {
-    max-width: 95%;
-  }
-}
 }
