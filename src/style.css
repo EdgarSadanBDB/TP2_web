@@ -57,7 +57,49 @@ nav ul li {
   border: none;
 }
 
-/* Adaptatif mobile */
+/*Barre de navigation*/
+
+/*Début de la page*/
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+
+    img{
+        position: relative;
+        width: 100vw;
+    }
+
+    h1{
+      position: absolute;
+      margin-bottom: 25rem;
+      font-size: 10rem;
+      color: white;
+    }
+}
+
+.Cathegories{
+
+  button{
+    width: 20rem;
+    height: 10rem;
+  }
+}
+
+.cat-wrap{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+
+/*Adaptatif au mobile*/
 @media (width <= 56.25rem) {
   .menu-icon {
     display: block;
