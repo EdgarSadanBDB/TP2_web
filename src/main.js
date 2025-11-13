@@ -65,17 +65,17 @@ if (boutonCote && boutonDessus && boutonDos) {
 const title = document.querySelector(".title");
 
 gsap.to(title, {
-    scrollTrigger: {
-        trigger: '.title',
-        start: "top center", 
-        end: "bottom top",
-        scrub: 1, 
- 
-        toggleActions: "play none none reverse" 
-    },
-    y: 200,
-    ease: 'expo.out',
-    duration: 3,
-    opacity: 0.8,
-    delay:0.3,
+  scrollTrigger: {
+    trigger: '.title',
+    start: "top center",
+    end: "bottom top",
+    scrub: 1,
+
+    toggleActions: "play none none reverse"
+  },
+  y: 200,
+  ease: 'expo.out',
+  duration: 3,
+  opacity: 0.8,
+  delay: 0.3,
 });

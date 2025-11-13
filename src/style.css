@@ -5,6 +5,8 @@
   size: 16px;
 }
 
+/*..............................Barre de navigation...............................*/
+
 header {
   background-color: #383838;
   color: whitesmoke;
@@ -67,9 +69,9 @@ nav {
   border: none;
 }
 
-/*Barre de navigation*/
+/*..............................Barre de navigation...............................*/
 
-/*Début de la page*/
+/*..............................Page d'accueil...................................*/
 
 .hero {
   display: flex;
@@ -87,8 +89,6 @@ nav {
   }
 }
 
-
-
 .Categories {
   background-color: #f5f5f5;
 
@@ -102,7 +102,7 @@ nav {
     height: 10rem;
     color: #f5f5f5;
     font-size: 2rem;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 10);
+    text-shadow: 0.125rem 0.125rem 0.313px rgba(0, 0, 0, 10);
 
   }
 
@@ -183,10 +183,14 @@ nav {
   gap: 2rem;
 }
 
-a{
+a {
   color: #383838;
   text-decoration: none
 }
+
+/*..............................Page d'accueil...................................*/
+
+/*..............................Page d'un produit...................................*/
 
 /*Adaptatif au mobile*/
 @media (width <=56.25rem) {
@@ -215,7 +219,7 @@ a{
     flex-direction: column;
   }
 
-  .hero h1{
+  .hero h1 {
     font-size: 4rem;
   }
 }
@@ -229,13 +233,13 @@ a{
 }
 
 .ProduitPresentation button {
-  width: 100px;
-  height: 100px;
+  width: 6.25rem;
+  height: 6.25rem;
 }
 
 .buttonNike-wrapper img {
-  width: 50px;
-  height: 50px;
+  width: 3.125rem;
+  height: 3.125rem;
 }
 
 .buttonNike {
@@ -246,7 +250,7 @@ a{
 
 .swiper .produit {
   width: 100%;
-  max-width: 600px;
+  max-width: 37.5rem;
   height: auto;
   aspect-ratio: 1 / 1;
   margin: 0 auto;
@@ -265,14 +269,25 @@ a{
 }
 
 .ProduitNike img {
-  width: 500px;
-  height: 500px;
+  width: 31.25rem;
+  height: 31.25rem;
+}
+
+.Tailles-wrapper h3 {
+  font-size: 2rem;
 }
 
 .Tailles-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+}
+
+.Tailles-wrapper img {
+  width: 10rem;
+  height: auto;
+  padding: 1rem;
 }
 
 .buttonTailles {
@@ -280,13 +295,13 @@ a{
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.5rem;
-  max-width: 300px;
+  max-width: 18.75rem;
   margin-top: 5rem;
 }
 
 .buttonTailles button {
-  min-width: 50px;
-  height: 40px;
+  min-width: 3.125rem;
+  height: 2.5rem;
 }
 
 .acheter {
@@ -317,8 +332,8 @@ a{
   justify-content: center;
   align-items: center;
   background: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.375rem rgba(0, 0, 0, 0.15);
 
 }
 
@@ -327,24 +342,39 @@ a{
 }
 
 .swiper-slide img {
-  width: 500px;
+  width: 31.25rem;
   height: auto;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   object-fit: cover;
 }
+
+/*..............................Page d'un produit...................................*/
+
+/*..............................Infolettre...................................*/
+
 
 .contactez {
   text-align: left;
   padding-bottom: 3rem;
-  background-image: url(/public/Hero.jpg);
+  background-image: url(/public/InfoLettre.jpg);
   background-size: cover;
-  background-position: 20rem;
+  background-position: 0.1rem;
 
 }
 
+.contact h4 {
+  color: black;
+  font-size: 2rem;
+  text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
+}
+
 input {
-  width: 1200px;
-  height: 200px;
+  width: 75rem;
+  height: 12.5rem;
 
 }
 
@@ -360,11 +390,14 @@ input {
 
 .contact img {
   width: auto;
-  height: 200px;
+  height: 12.5rem;
   ;
 }
 
-/* Footer */
+/*..............................Infolettre...................................*/
+
+/*..............................Pied de page...................................*/
+
 footer {
   background-color: #383838;
   position: relative;
@@ -398,14 +431,18 @@ body {
 }
 
 .suivez-nous img {
-  width: 50px;
-  height: 50px;
+  width: 3.125rem;
+  height: 3.125rem;
 }
+
+/*..............................Pied de page...................................*/
+
+/*..............................Adaptatif au mobile...................................*/
 
 @media (max-width: 1250px) {
   input {
-    width: 700px;
-    height: 200px;
+    width: 43.75rem;
+    height: 12.5rem;
   }
 }
 
@@ -421,8 +458,8 @@ body {
   }
 
   .suivez-nous img {
-    width: 30px;
-    height: 30px;
+    width: 1.875rem;
+    height: 1.875rem;
   }
 
   .Tailles-wrapper {
@@ -462,7 +499,9 @@ body {
   }
 
   input {
-    width: 400px;
-    height: 200px;
+    width: 25rem;
+    height: 12.5rem;
   }
 }
+
+/*..............................Adaptatif au mobile...................................*/
