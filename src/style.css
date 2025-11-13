@@ -119,7 +119,8 @@ nav ul li {
   display: flex;
   flex-direction: row;
   gap: 0.7rem;
-  margin-left: 10rem;
+  margin-top: 4rem;
+  justify-content: center;
 }
 .ProduitPresentation button{
   width: 100px;
@@ -135,9 +136,17 @@ nav ul li {
   flex-direction: column;
   gap: 0.6rem;
 }
-.swiper{
-  width: 800px;
-  height: 800px;
+.swiper .produit{
+  width: 100%;
+  max-width: 600px;      
+  height: auto;          
+  aspect-ratio: 1 / 1;   
+  margin: 0 auto;
+}
+.swiper-slide .produit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .ProduitNike img{
   width: 500px;
@@ -150,6 +159,22 @@ nav ul li {
 
 }
 
+.buttonTailles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  max-width: 300px; 
+  margin-top: 5rem;
+}
+
+.buttonTailles button {
+   
+  min-width: 50px;
+  height: 40px;
+}
+
+
 
 
 
@@ -160,9 +185,16 @@ footer{
   position: relative;
   bottom: 0;
   left: 0;
+  margin-top: auto;
   width: 100%;
 }
-
+body {
+  background-color: #f5f5f5;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /*Fait que le body prend toute la page pour que le footer reste en bas*/
+}
 .footer-wrapper{
   display: flex;
   justify-content: center;
@@ -190,4 +222,71 @@ footer{
   width: 30px;
   height: 30px;
   }
+
+   .Tailles-wrapper {
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+
+  .buttonTailles {
+    max-width: 90%;
+    justify-content: space-evenly;
+  }
+
+ 
+
+/* --- Organisation des boutons Nike --- */
+.buttonNike-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buttonNike {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+/* --- Adaptation mobile --- */
+@media (max-width: 800px) {
+  .ProduitPresentation {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .buttonNike-wrapper {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .buttonNike {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .buttonNike button {
+    width: 70px;
+    height: 70px;
+  }
+
+  .buttonNike-wrapper img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .swiper .produit{
+    max-width: 90vw;
+  }
+
+   .AutreProduit {
+    max-width: 95%;
+  }
+}
 }
