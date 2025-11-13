@@ -80,7 +80,13 @@ nav ul li {
         position: relative;
         width: 100vw;
     }
-    
+
+    h1{
+      position: absolute;
+      margin-bottom: 25rem;
+      font-size: 10rem;
+      color: white;
+    }
 }
 
 
