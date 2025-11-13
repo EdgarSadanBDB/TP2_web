@@ -50,11 +50,11 @@ ul {
 nav ul li {
   list-style: none;
   font-family: system-ui;
-  
+
 }
 
 nav {
-  a{
+  a {
     color: inherit;
     text-decoration: none;
   }
@@ -71,106 +71,109 @@ nav {
 
 /*Début de la page*/
 
-.hero{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url(/Hero.jpg);
-    background-size: cover;
-    height: 70rem;
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/Hero.jpg);
+  background-size: cover;
+  height: 70rem;
 
-    h1{
-      position: relative;
-      margin-bottom: 25rem;
-      font-size: 10rem;
-      color: #f5f5f5;
-    }
+  h1 {
+    position: relative;
+    margin-bottom: 25rem;
+    font-size: 10rem;
+    color: #f5f5f5;
+  }
 }
 
 
 
-.Categories{
-background-color: #f5f5f5;
+.Categories {
+  background-color: #f5f5f5;
 
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 
-  button{
+  button {
     width: 20rem;
     height: 10rem;
+    color: #f5f5f5;
+    font-size: 2rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 10);
+
   }
 
-  h2{
-    margin-top: 5rem;
+  h2 {
     margin-left: 5rem;
     font-size: 5rem;
     color: #383838;
   }
 }
 
-.CatSport{
+.CatSport {
   background-image: url(/public/imagesCathegories/CatSport.jpg);
   background-size: cover;
   background-position: 0.001rem;
 }
 
-.CatMode{
+.CatMode {
   background-image: url(/public/imagesCathegories/CatMode.jpg);
   background-size: cover;
   background-position: 0.001rem;
 }
 
-.CatChic{
+.CatChic {
   background-image: url(/public/imagesCathegories/CatChic.jpg);
   background-size: cover;
   background-position: 0.001rem;
 }
 
-.CatElite{
+.CatElite {
   background-image: url(/public/imagesCathegories/CatElite.jpg);
   background-size: cover;
   background-position: 0.001rem;
 }
 
-.CatLiquidation{
+.CatLiquidation {
   background-image: url(/public/imagesCathegories/CarLiquidation.jpg);
   background-size: cover;
   background-position: 0.001rem;
 }
 
-.CatJordan{
+.CatJordan {
   background-image: url(/public/imagesCathegories/CatJordan.jpg);
   background-size: cover;
   background-position: 0.001rem;
 }
 
-.CatDunk{
+.CatDunk {
   background-image: url(/public/imagesCathegories/CatDunk.jpg);
   background-size: cover;
   background-position: 0.001rem;
 }
 
-.CatBottes{
+.CatBottes {
   background-image: url(/public/imagesCathegories/CatBottes.jpg);
   background-size: cover;
   background-position: 0.001rem;
 }
 
-.CatMarche{
+.CatMarche {
   background-image: url(/public/imagesCathegories/CatMarche.jpg);
   background-size: cover;
   background-position: 0.001rem;
 }
 
-.CatConfort{
+.CatConfort {
   background-image: url(/public/imagesCathegories/CatConfort.jpg);
   background-size: cover;
   background-position: 0.001rem;
 }
 
-.cat-wrap{
+.cat-wrap {
   margin-top: 3rem;
   margin-bottom: 3rem;
   display: flex;
@@ -180,9 +183,13 @@ background-color: #f5f5f5;
   gap: 2rem;
 }
 
+a{
+  color: #383838;
+  text-decoration: none
+}
 
 /*Adaptatif au mobile*/
-@media (width <= 56.25rem) {
+@media (width <=56.25rem) {
   .menu-icon {
     display: block;
   }
@@ -208,6 +215,9 @@ background-color: #f5f5f5;
     flex-direction: column;
   }
 
+  .hero h1{
+    font-size: 4rem;
+  }
 }
 
 .ProduitPresentation {
@@ -284,16 +294,19 @@ background-color: #f5f5f5;
   color: white;
   border-color: rgb(0, 0, 0);
 }
-.autre{
+
+.autre {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.TitreAutre{
+
+.TitreAutre {
   margin-top: 10rem;
   text-align: center;
 }
+
 .swiper {
   width: 100%;
   padding: 1rem 0;
@@ -306,7 +319,7 @@ background-color: #f5f5f5;
   background: white;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-  
+
 }
 
 .swiper-slide:hover {
@@ -320,31 +333,35 @@ background-color: #f5f5f5;
   object-fit: cover;
 }
 
-.contactez{
+.contactez {
   text-align: left;
   padding-bottom: 3rem;
   background-image: url(/public/Hero.jpg);
   background-size: cover;
   background-position: 20rem;
-  
+
 }
- input{
+
+input {
   width: 1200px;
   height: 200px;
-  
- }
-.contact{
+
+}
+
+.contact {
   padding-top: 10rem;
   margin-left: 2rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   color: white;
-  
+
 }
-.contact img{
+
+.contact img {
   width: auto;
-  height: 200px;;
+  height: 200px;
+  ;
 }
 
 /* Footer */
@@ -373,7 +390,8 @@ body {
   gap: 10rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  a{
+
+  a {
     text-decoration: none;
     color: #f5f5f5;
   }
@@ -383,12 +401,14 @@ body {
   width: 50px;
   height: 50px;
 }
-@media (max-width: 1250px){
- input{
-  width: 700px;
-  height: 200px;
- }
+
+@media (max-width: 1250px) {
+  input {
+    width: 700px;
+    height: 200px;
+  }
 }
+
 /* Adaptatif footer */
 @media (max-width: 600px) {
   .footer-wrapper {
@@ -441,8 +461,8 @@ body {
     gap: 0.5rem;
   }
 
-  input{
-  width: 400px;
-  height: 200px;
- }
+  input {
+    width: 400px;
+    height: 200px;
+  }
 }

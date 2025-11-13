@@ -1,6 +1,8 @@
 import Swiper from "swiper/bundle";
 import "swiper/css/bundle";
-import { gsap } from "gsap";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 const menuIcon = document.querySelector('.menu-icon');
 const menuNav = document.querySelector('header nav');
@@ -42,16 +44,38 @@ const swiperProduit = new Swiper(".produit", {
 });
 
 const boutonCote = document.getElementById("boutonCote");
-boutonCote.addEventListener("click", () => {
-  swiperProduit.slideToLoop(0); 
-});
-
 const boutonDessus = document.getElementById("boutonDessus");
-boutonDessus.addEventListener("click", () => {
-  swiperProduit.slideToLoop(1); 
-});
-
 const boutonDos = document.getElementById("boutonDos");
-boutonDos.addEventListener("click", () => {
-  swiperProduit.slideToLoop(2); 
+
+if (boutonCote && boutonDessus && boutonDos) {
+  boutonCote.addEventListener("click", () => {
+    swiperProduit.slideToLoop(0);
+  });
+
+  boutonDessus.addEventListener("click", () => {
+    swiperProduit.slideToLoop(1);
+  });
+
+  boutonDos.addEventListener("click", () => {
+    swiperProduit.slideToLoop(2);
+  });
+}
+
+
+const title = document.querySelector(".title");
+
+gsap.to(title, {
+    scrollTrigger: {
+        trigger: '.title',
+        start: "top center", 
+        end: "bottom top",
+        scrub: 1, 
+ 
+        toggleActions: "play none none reverse" 
+    },
+    y: 200,
+    ease: 'expo.out',
+    duration: 3,
+    opacity: 0.8,
+    delay:0.3,
 });
